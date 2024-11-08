@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>JanteNet - Importadora de Jantes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>JanteNet</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Banner Inicial -->
+  <section id="banner">
+    <img src="img/banner.jpg" alt="Jantes de alta qualidade para o mercado europeu">
+    <div class="banner-text">
+      <h2>Qualidade e Eficiência para o Mercado Europeu</h2>
+      <p>Atendemos profissionais do setor automotivo com logística ágil e transparente.</p>
+      <a href="catalogo.html" class="btn">Ver Catálogo Completo</a>
+      <a href="contato.html" class="btn">Solicite uma Parceria</a>
+    </div>
+  </section>
+
+  <!-- Benefícios -->
+  <section id="benefits">
+    <div class="benefit">
+      <h3>Qualidade Certificada</h3>
+      <p>Jantes que cumprem com os mais altos padrões de segurança.</p>
+    </div>
+    <div class="benefit">
+      <h3>Entrega Rápida e Segura</h3>
+      <p>Soluções logísticas para garantir a agilidade que o seu negócio precisa.</p>
+    </div>
+    <div class="benefit">
+      <h3>Serviço Completo</h3>
+      <p>Tratamos de todo o processo burocrático para você.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 JanteNet. Todos os direitos reservados.</p>
+    <p>Email: infojantenet@gmail.com</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Jantes | JanteNet</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Catálogo de Jantes</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section id="catalog">
+    <h2>Nossas Jantes</h2>
+    <div class="filters">
+      <label for="size">Tamanho:</label>
+      <select id="size">
+        <option value="all">Todos</option>
+        <option value="15">15"</option>
+        <option value="16">16"</option>
+        <!-- Mais opções -->
+      </select>
+
+      <label for="material">Material:</label>
+      <select id="material">
+        <option value="all">Todos</option>
+        <option value="alloy">Liga Leve</option>
+        <option value="steel">Aço</option>
+        <!-- Mais opções -->
+      </select>
+    </div>
+
+    <!-- Grid de Produtos -->
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="img/jante1.jpg" alt="Jante Modelo X">
+        <h3>Modelo X</h3>
+        <p>Descrição breve do produto.</p>
+        <a href="contato.html" class="btn">Solicitar Orçamento</a>
+      </div>
+      <!-- Mais jantes -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 JanteNet. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Sobre a JanteNet</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sobre a JanteNet</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section id="about-us">
+    <h2>Nossa Missão</h2>
+    <p>Na JanteNet, trabalhamos para fornecer jantes de alta qualidade ao mercado europeu, com eficiência e transparência em todos os processos.</p>
+    
+    <h2>Nossos Diferenciais</h2>
+    <ul>
+      <li>Qualidade garantida em todos os produtos importados.</li>
+      <li>Serviço logístico completo e personalizado para cada cliente.</li>
+      <li>Gestão de processos burocráticos simplificada.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 JanteNet. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+#banner {
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.btn {
+  background-color: #0044cc;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
